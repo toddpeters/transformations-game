@@ -1,0 +1,12 @@
+POST http://127.0.0.1:5000/register 
+# POST http://127.0.0.1:5000/register HTTP/1.1
+content-type: application/json
+
+
+{
+    "UserName": "sampleRest",
+    "UserEmail": "test@email.com",
+    "UserPassword": "welcome" 
+}   
+
+

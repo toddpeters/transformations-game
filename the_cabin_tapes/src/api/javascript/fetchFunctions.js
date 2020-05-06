@@ -11,7 +11,7 @@ const fetchFunctions = {
             cache: 'no-cache',                      // *default, no-cache, reload, force-cache, only-if-cached
             credentials: 'same-origin',             // include, *same-origin, omit
             headers: {
-                'Content-Type': 'application/json'
+              'Content-Type': 'application/json'          
                                                     // 'Content-Type': 'application/x-www-form-urlencoded',
             },
             redirect: 'follow',                     // manual, *follow, error
@@ -51,7 +51,9 @@ const fetchFunctions = {
     },
 
     async registerUser(user) {
-        return await this.postData(url + 'user', user);
+        console.log(url +'register',user)
+        // return await this.postData(url +"user", user)
+        return await this.postData(url + 'register/', user);
     },
 
     async loginUser(userName) {
